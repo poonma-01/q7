@@ -1,0 +1,12 @@
+name: Email Step Action
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 23f2003677@ds.study.iitm.ac.in
+        run: echo "Step with email in name"
