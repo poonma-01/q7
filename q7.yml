@@ -1,0 +1,22 @@
+name: Custom Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 23f2003677@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
+      - name: Run tests
+        run: echo "Running tests..."
